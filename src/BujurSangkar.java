@@ -1,18 +1,26 @@
-
 public class BujurSangkar extends BangunDatar {
-    private double sisi;
 
     public BujurSangkar(double sisi) {
-        this.sisi = sisi;
+        super(sisi);
     }
 
-    @Override
-    public double hitungLuas() {
-        return sisi * sisi;
+    public double getKeliling(){
+        double total = super.getSisi() * 4;
+        return total;
     }
 
-    @Override
-    public double hitungKeliling() {
-        return 4 * sisi;
+    public double getLuas(){
+        double total = super.getSisi() * super.getSisi();
+        return total;
     }
+
+    public void infoBujurSangkar(){
+        System.out.println("Sisi: " + super.getSisi());
+        System.out.println("Luas Bujur Sangkar: " + getLuas());
+        System.out.println("Keliling Bujur Sangkar: " + getKeliling());
+        System.out.println("===========================================");
+        
+    }
+    
+
 }

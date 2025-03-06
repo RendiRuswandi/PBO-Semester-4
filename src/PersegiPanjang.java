@@ -1,20 +1,25 @@
-
-public class PersegiPanjang extends BangunDatar {
-    private double panjang;
-    private double lebar;
+public class PersegiPanjang extends BangunDatar{
 
     public PersegiPanjang(double panjang, double lebar) {
-        this.panjang = panjang;
-        this.lebar = lebar;
+        super(panjang, lebar);
+
     }
 
-    @Override
-    public double hitungLuas() {
-        return panjang * lebar;
+    public double getKeliling(){
+        return 2 * (getPanjang() + getLebar());
     }
 
-    @Override
-    public double hitungKeliling() {
-        return 2 * (panjang + lebar);
+    public double getLuas(){
+        return getPanjang() * getLebar();
     }
+
+    public void infoPersegiPanjang(){
+        System.out.println("Panjang: " + getPanjang());
+        System.out.println("Lebar: " + getLebar());
+        System.out.println("Keliling Persegi Panjang : " + getKeliling());
+        System.out.println("Luas Persegi Panjang : " + getLuas());
+        System.out.println("========================================");
+    }
+
+
 }

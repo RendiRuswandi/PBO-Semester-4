@@ -1,25 +1,61 @@
 public class Segitiga extends BangunDatar {
-    private double alas;
-    private double tinggi;
-    private double sisi1;
-    private double sisi2;
-    private double sisi3;
+    double alas;
+    double tinggi;
+    double sisiMiringA;
+    double sisiMiringB;
 
-    public Segitiga(double alas, double tinggi, double sisi1, double sisi2, double sisi3) {
+    public Segitiga(double alas, double tinggi) {
+        super(alas, tinggi); 
         this.alas = alas;
         this.tinggi = tinggi;
-        this.sisi1 = sisi1;
-        this.sisi2 = sisi2;
-        this.sisi3 = sisi3;
+        sisiMiringA = 1;
+        sisiMiringB = 2;
+
     }
 
-    @Override
-    public double hitungLuas() {
-        return 0.5 * alas * tinggi; // Rumus luas segitiga
+    //membuat setter
+    public void setSegitiga(double alas, double tinggi) {
+        this.alas = alas;
+        this.tinggi = tinggi;
     }
 
-    @Override
-    public double hitungKeliling() {
-        return sisi1 + sisi2 + sisi3; // Rumus keliling segitiga
+    public double getKeliling(){
+        return alas + sisiMiringA + sisiMiringB;
     }
+
+    public double getLuas(){
+        return (alas * tinggi) / 2;
+    }
+
+    public double getSisiMiringA(){
+        return sisiMiringA;
+    }
+
+    public double getSisiMiringB(){
+        return sisiMiringB;
+    }
+
+    public double getAlas(){
+        return alas;
+    }
+
+    public double getTinggi(){
+        return tinggi;
+    }
+
+    
+
+    public void infoSegitiga(){
+        
+        System.out.println("Sisi Miring a : " + sisiMiringA);
+        System.out.println("Sisi Miring b : " + sisiMiringB);
+        System.out.println("Alas : " + alas);
+        System.out.println("Tinggi: " + tinggi);
+        System.out.println("Keliling Segitiga: " + getKeliling());
+        System.out.println("Luas Segitiga: " + getLuas());
+        System.out.println("==========================");
+
+    }
+
+
 }
