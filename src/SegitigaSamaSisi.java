@@ -27,4 +27,5 @@ public class SegitigaSamaSisi extends BangunDatar {
         return (alas * tinggi) / 2;
     }
 
+    // Getters and setters can be added as needed
 }

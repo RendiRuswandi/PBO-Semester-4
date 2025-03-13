@@ -23,5 +23,5 @@ public class SegitigaSembarang extends Segitiga{
         System.out.println("Keliling : " + getKeliling());
         System.out.println("Luas : " + getLuas());
         System.out.println("=============================");
-    } 
+    }
 }
