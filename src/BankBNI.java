@@ -10,3 +10,4 @@ class BankBNI extends Bank {
         super.transferUang(jumlah, rekeningTujuan, "BNI");
     }
 }
+//

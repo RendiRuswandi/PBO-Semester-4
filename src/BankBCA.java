@@ -9,3 +9,4 @@ class BankBCA extends Bank {
         super.transferUang(jumlah, rekeningTujuan, "BCA");
     }
 }
+//
