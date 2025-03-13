@@ -45,5 +45,3 @@ public class MainBank {
         scanner.close();
     }
 }
-
-//

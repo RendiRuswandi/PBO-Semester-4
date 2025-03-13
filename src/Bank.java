@@ -39,4 +39,3 @@ class Bank {
         System.out.println("Suku Bunga standar adalah 3%");
     }
 }
-//
